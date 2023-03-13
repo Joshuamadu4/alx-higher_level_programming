@@ -1,10 +1,6 @@
 #!/usr/bin/node
 
-const multi  = ["C is fun", "Python is cool", "JavaScript is amazing"];
+// Script that prints C is fun,Python is cool and JavaScript is amazing.
 
-let i = 0; 
-
-while (i < multi.length){
-	console.log(multi[i]);
-	i++;
-}
+const myVar = 'C is fun\nPython is cool\nJavaScript is amazing';
+console.log(myVar);
