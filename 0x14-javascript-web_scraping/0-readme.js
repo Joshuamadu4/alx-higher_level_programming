@@ -1,10 +1,13 @@
 #!/usr/bin/node
-const fs = require('fs');
+# a script that reads and prints the content of a file.
 
-fs.readFile('cisfun', 'utf8', function (err, data) {
-  if (err) {
-    console.error(err);
+const fs = require('fs');
+const filename = process.argv[2];
+
+fs.readFile(filename, 'utf-8', (error, content) => {
+  if (error) {
+    console.log(error);
   } else {
-    console.log(data);
+    console.log(content);
   }
 });
